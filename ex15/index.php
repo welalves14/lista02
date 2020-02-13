@@ -1,22 +1,23 @@
 <html>
 
 	<header>
-		<title> Questao 15  </title>
+		<title> Questao 15 </title>
 	</header>
 	<body>
-	<?php
+	
+	<table border="1">	
+		<?php
 		$max = $_GET["total"];
 		
-		echo "</table border='1'>";
-
-		for($lin = 0; $lin < $max; $lin++){
+		for($lin = 1;$lin <= $max; $lin ++){
 			echo "<tr>";
-			for($col = 0; $col < $max; $col++){
-				echo "<td> texto  </td>";
+			for($col = 1;$col <= $max; $col ++){
+				echo "<td>Linha $lin - Coluna $col</td>";
 			}
-			echo "</tr><br>";
+			echo "</tr>";
 		}
-		echo "</table>";
-	?>		
+		?>
+	</table>
+
 	</body>	
 </html>
